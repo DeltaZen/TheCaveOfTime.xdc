@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./Styles/cave.css" />
+        <script src="webxdc.js"></script>
+    </head>
+    <body style="text-align:center">
+	<div id="titlepage">
+	    <h1>
+		The Cave<br />
+		of Time
+	    </h1>
+
+	    <p>
+		Edward Packard
+	    </p>
+	</div>
+        <br>
+	<a class="btn" href="./Text/p002.html">New Adventure</a>
+        <script>
+         if (localStorage.page) {
+             let body = document.getElementsByTagName("body")[0];
+             body.innerHTML += '<br><a class="btn" href="./Text/' + localStorage.page + '">Continue...</a>';
+         }
+        </script>
+    </body>
+</html>
